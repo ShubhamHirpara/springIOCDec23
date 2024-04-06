@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<!--    <bean class="co.pragra.learning.sprignioc020424.PetrolEngine" name="petrolEngine" scope="singleton" init-method="intAbc" destroy-method="distroyAbc">-->
+<!--    <bean class="co.pragra.learning.sprignioc020424.PetrolEngine" name="petrolEnginefromXML" scope="singleton" init-method="intAbc" destroy-method="distroyAbc">-->
 <!--        <constructor-arg name="engineType" value="Petrol"></constructor-arg>-->
 <!--        <constructor-arg name="horsePower" value="600"></constructor-arg>-->
 <!--        <property name="horsePower" value="100"></property>-->

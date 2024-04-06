@@ -7,6 +7,9 @@ ApplicationContext - Spring container
 @Value annotation
 SPEL -> Spring Expressional language
 
+Dependency Injection
+Constructor based DI , Setter based DI
+
 
 create Employee : 
 String firstName
