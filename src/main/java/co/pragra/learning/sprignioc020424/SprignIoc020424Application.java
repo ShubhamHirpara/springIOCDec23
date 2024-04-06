@@ -1,9 +1,11 @@
 package co.pragra.learning.sprignioc020424;
 
+import co.pragra.learning.sprignioc020424.cofing.AppConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 //@SpringBootApplication
@@ -11,7 +13,8 @@ public class SprignIoc020424Application {
 
     public static void main(String[] args) {
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+        //ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         PetrolEngine petrolEngine = context.getBean(PetrolEngine.class);
         PetrolEngine petrolEngine2 = context.getBean(PetrolEngine.class);
         PetrolEngine petrolEngine3 = context.getBean(PetrolEngine.class);
@@ -25,11 +28,11 @@ public class SprignIoc020424Application {
         System.out.println(petrolEngine5);
         System.out.println(petrolEngine6);
 
-        BMW bmw = context.getBean( "bmw",BMW.class);
-        BMW bmw2 = context.getBean( "bmw2",BMW.class);
-        BMW bmw3 = context.getBean( "bmw",BMW.class);
-        BMW bmw4 = context.getBean( "bmw",BMW.class);
-        BMW bmw5 = context.getBean( "bmw",BMW.class);
+        BMW bmw = context.getBean( "getBMW",BMW.class);
+        BMW bmw2 = context.getBean( "getBMW2",BMW.class);
+        BMW bmw3 = context.getBean( "getBMW",BMW.class);
+        BMW bmw4 = context.getBean( "getBMW",BMW.class);
+        BMW bmw5 = context.getBean( "getBMW",BMW.class);
         System.out.println(bmw);
         System.out.println(bmw2);
         System.out.println(bmw3);

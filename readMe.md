@@ -4,6 +4,10 @@ XML | annotations(bean) | annotation(component)
 
 ApplicationContext - Spring container
 
+@Value annotation
+SPEL -> Spring Expressional language
+
+
 create Employee : 
 String firstName
 String lastName

@@ -1,5 +1,8 @@
 package co.pragra.learning.sprignioc020424;
 
+import lombok.ToString;
+
+@ToString
 public class PetrolEngine implements IEngine{
     String engineType;
     Integer horsePower;
